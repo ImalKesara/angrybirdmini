@@ -1,0 +1,261 @@
+body ,h2,h1,li,ul,a{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(angrybirds-regular.ttf);
+  }
+
+
+header{
+    background-color:rgb(255, 2, 61);
+    height: 90px;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+header h2{
+    border-radius: 25px;
+    color: rgb(255, 254, 254);
+    display: inline-block;
+    padding: 7px;
+    text-transform: uppercase;
+    font-family: myFirstFont;
+    font-size: 50px;
+}
+
+.banner{
+    position: relative;
+}
+
+.banner img{
+    max-width: 100%;
+    
+}
+
+.banner .welcome{
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 0 10px 10px 0;
+    width: 500px;
+    height: 80px;
+    position: absolute;
+    left: 0;
+    top: 80%;
+    padding: 2px 10px 10px 10px;
+}
+
+.banner .welcome-hi{
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px 0 0 10px;
+    width: 300px;
+    height: 80px;
+    position: absolute;
+    text-align: center;
+    top: 20%;
+    right: 0;
+    padding: 18px 10px 10px 10px;
+}
+
+
+
+
+.banner h2{
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.banner h2 span{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+nav{
+    background-color:rgb(255, 2, 61);
+    padding: 20px;
+    position: sticky;
+    top: 90px;
+    width: 100%;
+}
+
+nav ul{
+    white-space: nowrap;
+    max-width: 1000px;
+}
+
+nav li{
+    display: inline-block;
+    width: 25%;
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 0 130px;
+    text-transform: capitalize;
+}
+
+nav .club{
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    text-transform: capitalize;
+}
+
+nav li a{
+    text-decoration: none;
+    color: rgb(252, 252, 252);;
+    
+}
+
+main{
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;
+    padding:0 40px;
+    box-sizing: border-box;
+
+}
+
+
+
+article h2{
+    font-size: 35px;
+    color: rgb(255, 2, 61);
+}
+
+article p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height : 30px;
+    
+}
+
+.gameplay {
+    text-align: center;
+    margin: 80px 0;
+    white-space: nowrap;
+}
+
+.gameplay li{
+    width: 40%;
+    display: inline-block;
+    margin: 0 5%;
+
+}
+.gameplay li img{
+    max-width: 100%;
+   
+}
+
+.join{
+    background-color: rgb(237, 233, 233);
+    text-align: center;
+    padding: 60px 20px;
+    color: grey;
+}
+
+.join h2{
+    font-size: 40px;
+    padding-bottom: 15px;
+}
+
+.join input{
+    margin: 20px 0;
+    padding: 10px 20px;
+    border-radius: 30px;
+    outline: none;
+    border: 3px solid rgb(255, 0, 0);
+}
+
+footer{
+    text-align: center;
+    background-color:rgb(255, 2, 61);
+    color: rgb(255, 255, 255);
+    height: 60px;
+    padding: 15px 0;
+}
+
+nav li a:hover{
+   color: greenyellow;
+ 
+}
+
+.gameplay li:hover{
+    position: relative;
+    top: -4px;
+}
+
+.join input:valid{
+    border: 3px solid greenyellow;
+}
+
+
+@media screen and (max-width : 965px){
+    
+
+    .banner h2{
+        font-size: 20px;
+        text-transform: capitalize;
+    }
+    .banner h2 span{
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+
+    .banner .welcome-hi{
+    background-color: rgba(219, 227, 5, 0.925);
+    border-radius: 10px 0 0 10px;
+    width: 200px;
+    height: 60px;
+    }
+
+    .banner .welcome{
+        background-color: rgba(255, 255, 255, 1);
+        border-radius: 0 10px 10px 0;
+        width: 400px;
+        height: 80px;
+    }
+       
+}
+
+@media screen and (max-width : 700px) {
+    .banner .welcome{
+        position: relative;
+        color: aqua;
+        width: 100%;
+        background-color: blueviolet;
+        text-align: center;
+        border-radius: 0px;
+        padding-top: 10px;
+        
+    }
+    .banner .welcome-hi{
+        position: relative;
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .gameplay li{
+        width: 100%;
+        margin: 20px auto;
+        display: block;
+    }
+}
+
+@media screen and (max-width:560px) {
+    nav li{
+        font-size: 16px;
+        width: 100%;
+        display: block;
+        margin: 10px auto;
+    }
+
+    header{
+        position: relative;
+    }
+    nav{
+    top:0;
+    }
+}
